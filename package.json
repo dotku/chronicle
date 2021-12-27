@@ -1,0 +1,20 @@
+{
+  "name": "chronicle",
+  "version": "1.0.0",
+  "description": "基于我的个人喜好编写的领域编年史，欢迎 Pork。",
+  "main": "index.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/dotku/chronicle.git"
+  },
+  "keywords": [],
+  "author": "",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/dotku/chronicle/issues"
+  },
+  "homepage": "https://github.com/dotku/chronicle#readme"
+}
