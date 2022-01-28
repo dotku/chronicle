@@ -9,14 +9,4 @@ jobs:
       - uses: actions/checkout@v2
       - name: npm install and build webpack
         uses: actions/setup-node@v2
-      - run: |
-          pwd
-          ls -la ..
-          npm install
-          npm run build
-
-  run-npm-deploy:
-    runs-on: ubuntu-latest
-    steps:
-      - name: npm deploy
-        run: npm run deploy
+      - run: npm run build
