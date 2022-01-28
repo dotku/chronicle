@@ -4,7 +4,7 @@ on:
     branches: ["master"]
 
 jobs:
-  run-npm-build:
+  gh-pages-deployment:
     runs-on: ubuntu-latest
     steps:
       - uses: actions/checkout@v2
