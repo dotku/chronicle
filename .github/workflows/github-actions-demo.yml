@@ -6,7 +6,9 @@ jobs:
   run-npm-build:
     runs-on: ubuntu-latest
     steps:
+      - uses: actions/checkout@v2
       - name: npm install and build webpack
+        uses: actions/setup-node@v2
         run: |
           pwd
           ls -la ..
