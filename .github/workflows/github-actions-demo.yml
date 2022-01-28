@@ -9,7 +9,7 @@ jobs:
       - name: npm install and build webpack
         run: |
           pwd
-          ls -la
+          ls -la ..
           npm install
           npm run build
 
