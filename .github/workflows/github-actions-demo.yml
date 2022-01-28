@@ -8,6 +8,8 @@ jobs:
     steps:
       - name: npm install and build webpack
         run: |
+          pwd
+          ls
           npm install
           npm run build
 
