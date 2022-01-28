@@ -1,1 +1,0 @@
-(()=>{throw new Error("[HMR] Hot Module Replacement is disabled.")})(),console.log("index.js 123");
