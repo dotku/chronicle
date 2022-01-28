@@ -8,6 +8,7 @@ jobs:
         run: |
         npm install
         npm run build
+
   run-npm-deploy:
     runs-on: ubuntu-latest
     steps:
