@@ -3,32 +3,24 @@ const CopyPlugin = require("copy-webpack-plugin");
 const webpack = require("webpack");
 
 module.exports = {
-  entry: {
-    app: "./src/index.js",
-    // Runtime code for hot module replacement
-    hot: "webpack/hot/dev-server.js",
-    // Dev server client for web socket transport, hot and live reload logic
-    client: "webpack-dev-server/client/index.js?hot=true&live-reload=true",
-  },
+  mode: "development",
+  target: "web",
+  // watch: true,
+  entry: ["webpack/hot/dev-server", "./src/index.js"],
+  // publicPath: "/public_html/",
   devServer: {
+    // watchOptions: {
+    //   ignored: "/node_modules/",
+    // },
     static: {
-      directory: path.join(__dirname, "dist"),
+      directory: path.join(__dirname, "public"),
     },
-    compress: true,
-    port: 9000,
-    hot: true,
-    client: false,
+    // compress: true,
   },
   plugins: [
     new CopyPlugin({
-      patterns: [{ from: "public_html", to: path.resolve(__dirname, "dist") }],
+      patterns: [{ from: "public", to: path.resolve(__dirname, "dist") }],
     }),
     new webpack.HotModuleReplacementPlugin(),
   ],
-  output: {
-    filename: "[name].bundle.js",
-    path: path.resolve(__dirname, "dist"),
-    publicPath: "/chronicle/",
-    clean: true,
-  },
 };
