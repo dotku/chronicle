@@ -9,5 +9,5 @@ jobs:
       - uses: actions/checkout@v2
       - name: npm install and build webpack
         uses: actions/setup-node@v2
-      - run: npm install
+      - run: npm install --registry=https://registry.npmjs.org/
       - run: npm run build
