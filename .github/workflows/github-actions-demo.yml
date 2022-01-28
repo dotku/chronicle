@@ -1,6 +1,6 @@
-on:
-  push:
-    branches: ["master"]
+# on:
+#   push:
+#     branches: ["master"]
 
 jobs:
   run-npm-build:
