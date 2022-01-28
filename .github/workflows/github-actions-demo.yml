@@ -6,8 +6,8 @@ jobs:
     steps:
       - name: npm install and build webpack
         run: |
-        npm install
-        npm run build
+          npm install
+          npm run build
 
   run-npm-deploy:
     runs-on: ubuntu-latest
