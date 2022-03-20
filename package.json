@@ -1,7 +1,7 @@
 {
   "name": "chronicle",
   "version": "1.0.0",
-  "homepage": "https://github.com/dotku/chronicle",
+  "homepage": "https://dotku.github.io/chronicle/",
   "description": "基于我的个人喜好编写的领域编年史，欢迎 Pork。",
   "private": true,
   "scripts": {
