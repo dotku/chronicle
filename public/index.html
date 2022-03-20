@@ -14,7 +14,10 @@
       integrity="sha384-1BmE4kWBq78iYhFldvKuhfTAU6auU8tT94WrHftjDbrCEXSU1oBoqyl2QvZ6jIW3"
       crossorigin="anonymous"
     />
-    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.8.1/font/bootstrap-icons.css">
+    <link
+      rel="stylesheet"
+      href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.8.1/font/bootstrap-icons.css"
+    />
     <style>
       a {
         text-decoration: none;
@@ -41,6 +44,7 @@
       gtag("config", "G-8P7X5SQZ1V");
     </script>
   </head>
+
   <body>
     <nav class="navbar navbar-expand-lg navbar-light bg-light">
       <div class="container-fluid">
@@ -155,12 +159,15 @@
       <h2>附录: 学科</h2>
       <p>
         学科分类上其实有一些歧义，每个院校根据自己的情况都有一些不同的分类方式，比如有一些院校甚至有一些两性情感
-        这种比较私密的课程，有一些院校则没有。每个国家的情况也各有不同，比如中国有学科标准，而美国则没有固定的学科标准，各个学科由学校根据自己的情况来安排课程。
+        这种比较私密的课程，有一些院校则没有。每个国家的情况也各有不同，比如中国有
+        GB 学科标准，而美国则有 CIP
+        标准，各个学科由学校根据自己的情况来安排课程。
       </p>
       <p>
-        本项目则根据自洽合理的原则来进行分类，部分学科可能以跨学科的方式来呈现，比如工程、管理方面的学科，往往是跨学科的。
+        本项目则根据联合国教科文组织 (UNESCO)
+        的学科分类法来进行分类，部分学科可能以跨学科的方式来呈现，比如工程、管理方面的学科，往往是跨学科的。
       </p>
-      <ol>
+      <ol type="A">
         <li>
           自然科学
           <span
@@ -170,7 +177,8 @@
             aria-controls="natural-science"
             data-bs-toggle="collapse"
             data-bs-target="#natural-science"
-            ><em class="bi bi-arrows-expand"></em></span>
+            ><em class="bi bi-arrows-expand"></em
+          ></span>
           <ul class="collapse" id="natural-science">
             <li>
               <a href="./mathmatics.html">数学</a>
@@ -218,42 +226,6 @@
           </ul>
         </li>
         <li>
-          农业科学
-          <span
-            data-toggle="collapse"
-            role="button"
-            aria-expanded="false"
-            aria-controls="agricultural"
-            data-bs-toggle="collapse"
-            data-bs-target="#agricultural"
-            ><em class="bi bi-arrows-expand"></em></span>
-          <ul class="collapse" id="agricultural">
-            <li>农学</li>
-            <li>林学</li>
-            <li>畜牧、兽医科学</li>
-            <li>水产学</li>
-          </ul>
-        </li>
-        <li>
-          医药科学
-          <span
-            data-toggle="collapse"
-            role="button"
-            aria-expanded="false"
-            aria-controls="medical-science"
-            data-bs-toggle="collapse"
-            data-bs-target="#medical-science"
-            ><em class="bi bi-arrows-expand"></em></span>
-            <ul class="collapse" id="medical-science">
-              <li>基础医学</li>
-              <li>临床医学</li>
-              <li>预防医学与公共卫生学</li>
-              <li>军事医学与特种医学</li>
-              <li>药学</li>
-              <li>中医学与中药学</li>
-            </ul>
-        </li>
-        <li>
           工程与技术科学
           <span
             data-toggle="collapse"
@@ -262,7 +234,8 @@
             aria-controls="engineering"
             data-bs-toggle="collapse"
             data-bs-target="#engineering"
-            ><em class="bi bi-arrows-expand"></em></span>
+            ><em class="bi bi-arrows-expand"></em
+          ></span>
           <ul class="collapse" id="engineering">
             <li>
               <a
@@ -288,8 +261,64 @@
             <li>管理学</li>
           </ul>
         </li>
+
         <li>
-          <a href="./humanities-and-social-science">人文与社会科学</a>
+          医药科学
+          <span
+            data-toggle="collapse"
+            role="button"
+            aria-expanded="false"
+            aria-controls="medical-science"
+            data-bs-toggle="collapse"
+            data-bs-target="#medical-science"
+            ><em class="bi bi-arrows-expand"></em
+          ></span>
+          <ul class="collapse" id="medical-science">
+            <li>基础医学</li>
+            <li>临床医学</li>
+            <li>预防医学与公共卫生学</li>
+            <li>军事医学与特种医学</li>
+            <li>药学</li>
+            <li>中医学与中药学</li>
+          </ul>
+        </li>
+        <li>
+          农业科学
+          <span
+            data-toggle="collapse"
+            role="button"
+            aria-expanded="false"
+            aria-controls="agricultural"
+            data-bs-toggle="collapse"
+            data-bs-target="#agricultural"
+            ><em class="bi bi-arrows-expand"></em
+          ></span>
+          <ul class="collapse" id="agricultural">
+            <li>农学</li>
+            <li>林学</li>
+            <li>畜牧、兽医科学</li>
+            <li>水产学</li>
+          </ul>
+        </li>
+        <li>
+          社会科学
+          <span
+            data-toggle="collapse"
+            role="button"
+            aria-expanded="false"
+            aria-controls="social-science"
+            data-bs-toggle="collapse"
+            data-bs-target="#social-science"
+            ><em class="bi bi-arrows-expand"></em
+          ></span>
+          <ul class="collapse" id="social-science">
+            <li>政治学、外交</li>
+            <li>经济学、商学、金融学</li>
+            <li>社会学、民族学</li>
+          </ul>
+        </li>
+        <li>
+          <a>人文与艺术</a>
           <span
             data-toggle="collapse"
             role="button"
@@ -297,23 +326,21 @@
             aria-controls="humanities-and-social-science"
             data-bs-toggle="collapse"
             data-bs-target="#humanities-and-social-science"
-            ><em class="bi bi-arrows-expand"></em></span>
+            ><em class="bi bi-arrows-expand"></em
+          ></span>
           <ul class="collapse" id="humanities-and-social-science">
             <li>哲学</li>
-            <li>宗教学
+            <li>
+              宗教学
               <ul>
-                <li>
-                  鬼神
-                </li>
-                <li>
-                  宗教
-                </li>
-                </li>
+                <li>鬼神</li>
+                <li>宗教</li>
               </ul>
             </li>
             <li>语言学</li>
             <li>艺术</li>
-            <li>法学
+            <li>
+              法学
               <ul>
                 <li>
                   商务法
@@ -324,10 +351,11 @@
               </ul>
             </li>
             <li>社会学</li>
-            <li>经济学
+            <li>
+              经济学
               <ul>
                 <li>会计</li>
-            <li>金融</li>
+                <li>金融</li>
               </ul>
             </li>
           </ul>
