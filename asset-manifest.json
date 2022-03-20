@@ -1,0 +1,10 @@
+{
+  "files": {
+    "main.js": "/chronicle/static/js/main.b169820e.js",
+    "index.html": "/chronicle/index.html",
+    "main.b169820e.js.map": "/chronicle/static/js/main.b169820e.js.map"
+  },
+  "entrypoints": [
+    "static/js/main.b169820e.js"
+  ]
+}
