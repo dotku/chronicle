@@ -83,6 +83,9 @@ web_modules/
 .cache
 .parcel-cache
 
+# Rewact build output
+build
+
 # Next.js build output
 .next
 out
@@ -90,6 +93,9 @@ out
 # Nuxt.js build / generate output
 .nuxt
 dist
+
+# Webpack buid
+server-bulid
 
 # Gatsby files
 .cache/
@@ -125,3 +131,6 @@ dist
 .yarn/build-state.yml
 .yarn/install-state.gz
 .pnp.*
+
+# Expo
+.expo
