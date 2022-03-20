@@ -14,6 +14,7 @@
       integrity="sha384-1BmE4kWBq78iYhFldvKuhfTAU6auU8tT94WrHftjDbrCEXSU1oBoqyl2QvZ6jIW3"
       crossorigin="anonymous"
     />
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.8.1/font/bootstrap-icons.css">
     <style>
       a {
         text-decoration: none;
@@ -152,111 +153,44 @@
         </li>
       </ul>
       <h2>附录: 学科</h2>
-      <ul>
-        <li>
-          艺术
-          <ul>
-            <li>
-              视觉艺术 Visual Art
-              <ul>
-                <li>绘画</li>
-                <li>素描</li>
-                <li>雕像</li>
-                <li>摄影</li>
-                <li>手工</li>
-                <li>陶艺</li>
-                <li>建筑</li>
-              </ul>
-            </li>
-            <li>
-              表演艺术
-              <ul>
-                <li>戏剧</li>
-                <li>舞蹈</li>
-                <li>音乐</li>
-              </ul>
-            </li>
-            <li>
-              文学
-              <ul>
-                <li>诗歌</li>
-                <li>编剧</li>
-                <li>小说</li>
-                <li>纪实</li>
-                <li>
-                  语言 (2005 统计)
-                  <ul>
-                    <li>汉语 (1B)</li>
-                    <li>英语 (510M)</li>
-                    <li>印地语 (490M)</li>
-                    <li>西班牙语 (420M)</li>
-                    <li>俄语 (255M)</li>
-                    <li>德语 (229M)</li>
-                    <li>阿拉伯语 (225M)</li>
-                    <li>孟加拉语 (215M)</li>
-                    <li>葡萄牙语 (213M)</li>
-                    <li>法语 (130M)</li>
-                    <li>日语 (127M)</li>
-                  </ul>
-                </li>
-              </ul>
-            </li>
-            <li>电子游戏</li>
-          </ul>
-        </li>
-        <li>
-          历史
-          <ul>
-            <li>化石/DNA</li>
-            <li>壁画</li>
-            <li>草编</li>
-            <li>石碑</li>
-            <li>古卷</li>
-            <li>古文</li>
-          </ul>
-        </li>
-        <li>
-          人类文明史
-          <ul>
-            <li>
-              <a href="biography.html" class="text-decoration-none">人物传记</a>
-            </li>
-            <li>中国历史</li>
-            <li>美国历史</li>
-            <li>欧洲历史</li>
-          </ul>
-        </li>
-        <li>天文</li>
-        <li>地理</li>
-        <li>
-          神学
-          <ul>
-            <li>
-              神话
-              <ul>
-                <li>中国神话故事</li>
-                <li>日本神话故事</li>
-                <li>北欧神话</li>
-                <li>印度神话</li>
-                <li>埃及神话</li>
-                <li>巴比伦神话</li>
-                <li>古希腊/古罗马神话</li>
-              </ul>
-            </li>
-            <li>
-              宗教
-              <ul>
-                <li>基督教</li>
-                <li>佛教</li>
-                <li>伊斯兰</li>
-              </ul>
-            </li>
-          </ul>
-        </li>
-        <li>哲学</li>
+      <p>
+        学科分类上其实有一些歧义，每个院校根据自己的情况都有一些不同的分类方式，比如有一些院校甚至有一些两性情感
+        这种比较私密的课程，有一些院校则没有。每个国家的情况也各有不同，比如中国有学科标准，而美国则没有固定的学科标准，各个学科由学校根据自己的情况来安排课程。
+      </p>
+      <p>
+        本项目则根据自洽合理的原则来进行分类，部分学科可能以跨学科的方式来呈现，比如工程、管理方面的学科，往往是跨学科的。
+      </p>
+      <ol>
         <li>
           自然科学
-          <ul>
+          <span
+            data-toggle="collapse"
+            role="button"
+            aria-expanded="false"
+            aria-controls="natural-science"
+            data-bs-toggle="collapse"
+            data-bs-target="#natural-science"
+            ><em class="bi bi-arrows-expand"></em></span>
+          <ul class="collapse" id="natural-science">
+            <li>
+              <a href="./mathmatics.html">数学</a>
+              <ul>
+                <li>算术</li>
+                <li>几何</li>
+                <li>代数</li>
+                <li>微积分</li>
+                <li>线形代数</li>
+                <li>离散数学</li>
+                <li>算法</li>
+              </ul>
+            </li>
+            <li>天文</li>
+            <li>
+              地球科学
+              <ul>
+                <li>地理</li>
+              </ul>
+            </li>
             <li>
               <a href="./biology.html" class="text-decoration-none">生物</a>
               <ul>
@@ -280,45 +214,56 @@
                 </li>
               </ul>
             </li>
+            <li>心理学</li>
           </ul>
         </li>
         <li>
-          社会科学
-          <ul>
-            <li>社会学</li>
-            <li>心理</li>
-            <li>经济学</li>
+          农业科学
+          <span
+            data-toggle="collapse"
+            role="button"
+            aria-expanded="false"
+            aria-controls="agricultural"
+            data-bs-toggle="collapse"
+            data-bs-target="#agricultural"
+            ><em class="bi bi-arrows-expand"></em></span>
+          <ul class="collapse" id="agricultural">
+            <li>农学</li>
+            <li>林学</li>
+            <li>畜牧、兽医科学</li>
+            <li>水产学</li>
           </ul>
         </li>
         <li>
-          商务
-          <ul>
-            <li>会计</li>
-            <li>金融</li>
-            <li>
-              商务法
-              <ul>
-                <li>税务</li>
-              </ul>
-            </li>
-          </ul>
+          医药科学
+          <span
+            data-toggle="collapse"
+            role="button"
+            aria-expanded="false"
+            aria-controls="medical-science"
+            data-bs-toggle="collapse"
+            data-bs-target="#medical-science"
+            ><em class="bi bi-arrows-expand"></em></span>
+            <ul class="collapse" id="medical-science">
+              <li>基础医学</li>
+              <li>临床医学</li>
+              <li>预防医学与公共卫生学</li>
+              <li>军事医学与特种医学</li>
+              <li>药学</li>
+              <li>中医学与中药学</li>
+            </ul>
         </li>
-        <li>法律</li>
         <li>
-          形式科学
-          <ul>
-            <li>
-              <a href="./mathmatics.html">数学</a>
-              <ul>
-                <li>算术</li>
-                <li>几何</li>
-                <li>代数</li>
-                <li>微积分</li>
-                <li>线形代数</li>
-                <li>离散数学</li>
-                <li>算法</li>
-              </ul>
-            </li>
+          工程与技术科学
+          <span
+            data-toggle="collapse"
+            role="button"
+            aria-expanded="false"
+            aria-controls="engineering"
+            data-bs-toggle="collapse"
+            data-bs-target="#engineering"
+            ><em class="bi bi-arrows-expand"></em></span>
+          <ul class="collapse" id="engineering">
             <li>
               <a
                 href="./information-technology.html"
@@ -340,13 +285,64 @@
                 </li>
               </ul>
             </li>
+            <li>管理学</li>
           </ul>
         </li>
-      </ul>
+        <li>
+          <a href="./humanities-and-social-science">人文与社会科学</a>
+          <span
+            data-toggle="collapse"
+            role="button"
+            aria-expanded="false"
+            aria-controls="humanities-and-social-science"
+            data-bs-toggle="collapse"
+            data-bs-target="#humanities-and-social-science"
+            ><em class="bi bi-arrows-expand"></em></span>
+          <ul class="collapse" id="humanities-and-social-science">
+            <li>哲学</li>
+            <li>宗教学
+              <ul>
+                <li>
+                  鬼神
+                </li>
+                <li>
+                  宗教
+                </li>
+                </li>
+              </ul>
+            </li>
+            <li>语言学</li>
+            <li>艺术</li>
+            <li>法学
+              <ul>
+                <li>
+                  商务法
+                  <ul>
+                    <li>税务</li>
+                  </ul>
+                </li>
+              </ul>
+            </li>
+            <li>社会学</li>
+            <li>经济学
+              <ul>
+                <li>会计</li>
+            <li>金融</li>
+              </ul>
+            </li>
+          </ul>
+        </li>
+      </ol>
       <div>
         <h2>附录: 参考</h2>
         <ul>
           <li>《世界科技全景百卷书》</li>
+          <li>
+            <a
+              href="https://zh.wikipedia.org/wiki/%E4%B8%AD%E5%8D%8E%E4%BA%BA%E6%B0%91%E5%85%B1%E5%92%8C%E5%9B%BD%E5%AD%A6%E7%A7%91%E5%88%86%E7%B1%BB"
+              >中华人民共和国学科分类</a
+            >
+          </li>
         </ul>
       </div>
       <iframe
